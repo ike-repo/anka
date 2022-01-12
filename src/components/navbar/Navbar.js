@@ -17,10 +17,10 @@ function Navbar ()
             <div>
                 <nav className="NavbarItems" >
                     <div className='logoset'>
-                        <Link to="/" >
+                        <Link to="/anka/" >
                             <img className="logo" src={ logo } alt="logo" ></img>
                         </Link >
-                        <Link to="/" >
+                        <Link to="/anka/" >
                             <img className="logoName" src={ logoName } alt="logo name" ></img>
                         </Link >
                     </div>

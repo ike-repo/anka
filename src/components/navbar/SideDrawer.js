@@ -7,7 +7,7 @@ import SubMenu from './SubMenu';
 import { IconContext } from 'react-icons/lib';
 import './SideDrawer.css'
 import onClickOutside from 'react-onclickoutside';
-import logo from '../../assets/logo.jpg';
+import logo from '../../assets/anka_logo.svg';
 
 const SideDrawerNav = styled.nav`
     background: #52796F;
@@ -37,7 +37,7 @@ function SideDrawer( {item} ){
         <div className="navbar-small-container">
             
             <div>
-                <Link className="logoSet" to="/" >
+                <Link className="logoSet" to="/anka/" >
                     <img className="logo-side-drawer" src={ logo } alt="logo"></img>
                 </Link>
             </div>

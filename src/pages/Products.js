@@ -25,7 +25,7 @@ const stylesFunc = makeStyles( ( theme ) => ( {
        alignItems:'center',
         //  height: "calc(140vh - 19.0625rem)",
         // textAlign: 'start',
-        overflow: 'hidden',
+        overflowX: 'hidden',
     // overflowY: 'visible',
 
     },
