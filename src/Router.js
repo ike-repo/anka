@@ -14,8 +14,8 @@ import Cy1355 from '../src/pages/Cy1355';
 function AppRouter ()
 {
     return (
-        // <Router >
-        <HashRouter >
+        <Router basename="/anka">
+        {/* <HashRouter > */}
             <div className="App">
                 <Navbar />
                 <Routes>
@@ -29,8 +29,8 @@ function AppRouter ()
                 </Routes>
                 <Footer />
             </div>
-        </HashRouter>
-        // </Router>
+        {/* </HashRouter> */}
+        </Router>
     );
 }
 
