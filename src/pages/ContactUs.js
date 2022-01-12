@@ -76,7 +76,7 @@ const ContactUs = () =>
                         <i className="fas fa-map-marked-alt fa-5x" style={ { color: "#14688D" } }></i>
                         <br></br>
                         <Typography className={ formStyles.info } variant="h5">
-                        Reşadiye Mah. Sadrettin Konevi Sok. No: 13/4 Samsun
+                        İstiklal Mahallesi 894. Sokak No:79A/15 Atakum/SAMSUN
                         </Typography>
                     </div>
                     <div className={ formStyles.headerInfo }>

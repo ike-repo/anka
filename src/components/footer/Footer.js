@@ -3,7 +3,7 @@ import "./Footer.css";
 import Grid from "@material-ui/core/Grid";
 import Link from "@material-ui/core/Link";
 import Container from "@material-ui/core/Container";
-import logo from '../../assets/anka_logo.svg'
+import logo from '../../assets/anka_logo1.svg'
 import { Typography } from '@material-ui/core';
 
 function Copyright ()
@@ -54,13 +54,13 @@ export default function Footer ()
                                 <div>
                                     <i className="fas fa-map-marked-alt" style={ { color: "red" } }></i>
                                     <Typography className="contactus">
-                                        Reşadiye Mah. Sadrettin Konevi Sok. No: 13/4 Samsun
+                                        İstiklal Mahallesi 894. Sokak No:79A/15 Atakum/SAMSUN
                                     </Typography>
                                 </div>
                             </li>
                             <li className="listItem">
                                 <Typography className="contactus">
-                                    Tel: 0-362-440-2464
+                                    Tel: 0 533 136 18 79
                                 </Typography>
                             </li>
                             <li className="listItem">
