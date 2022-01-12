@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, HashRouter} from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, HashRouter } from "react-router-dom";
 import HomePage from "../src/pages/HomePage";
 import Navbar from '../src/components/navbar/Navbar';
 import Footer from './components/footer/Footer';
@@ -11,25 +11,26 @@ import ProductsUreter from '../src/pages/ProductsUreter';
 import Cy1355 from '../src/pages/Cy1355';
 
 
-function AppRouter() {
+function AppRouter ()
+{
     return (
-        <Router >
+        // <Router >
+        <HashRouter >
             <div className="App">
                 <Navbar />
-                {/* <Routes> */}
-                    <HashRouter >
-                        <Route path={process.env.PUBLIC_URL + '/anka'} element={<HomePage/>}  /> 
-                        <Route path={process.env.PUBLIC_URL + '/products'} element={<Products/>} />
-                        <Route path={process.env.PUBLIC_URL + '/contact-us'} element={<ContactUs/>} />
-                        <Route path={process.env.PUBLIC_URL + '/products/ur-1328'} element={<Ur1328/>} />
-                        <Route path={process.env.PUBLIC_URL + '/products/ur-1331'} element={<Ur1331/>} />
-                        <Route path={process.env.PUBLIC_URL + '/products/ureter'} element={<ProductsUreter/>} />
-                        <Route path={process.env.PUBLIC_URL + '/products/cy-1355'} element={<Cy1355/>} />
-                    </HashRouter>
-                {/* </Routes> */}
-                <Footer /> 
+                <Routes>
+                    <Route path={ process.env.PUBLIC_URL + '/anka' } element={ <HomePage /> } />
+                    <Route path={ process.env.PUBLIC_URL + '/products' } element={ <Products /> } />
+                    <Route path={ process.env.PUBLIC_URL + '/contact-us' } element={ <ContactUs /> } />
+                    <Route path={ process.env.PUBLIC_URL + '/products/ur-1328' } element={ <Ur1328 /> } />
+                    <Route path={ process.env.PUBLIC_URL + '/products/ur-1331' } element={ <Ur1331 /> } />
+                    <Route path={ process.env.PUBLIC_URL + '/products/ureter' } element={ <ProductsUreter /> } />
+                    <Route path={ process.env.PUBLIC_URL + '/products/cy-1355' } element={ <Cy1355 /> } />
+                </Routes>
+                <Footer />
             </div>
-        </Router>
+        </HashRouter>
+        // </Router>
     );
 }
 
