@@ -15,7 +15,7 @@ function AppRouter ()
 {
     return (
         // <Router >
-        <HashRouter basename= {process.env.PUBLIC_URL}>
+        <HashRouter >
             <div className="App">
                 <Navbar />
                 <Routes>
