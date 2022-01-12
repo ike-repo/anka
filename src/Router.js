@@ -13,17 +13,17 @@ import Cy1355 from '../src/pages/Cy1355';
 
 function AppRouter() {
     return (
-        <Router>
+        <Router >
             <div className="App">
                 <Navbar />
                 <Routes>
-                    <Route path="/" element={<HomePage/>}  /> 
-                    <Route path="/products" element={<Products/>} />
-                    <Route path="/contact-us" element={<ContactUs/>} />
-                    <Route path="/products/ur-1328" element={<Ur1328/>} />
-                    <Route path="/products/ur-1331" element={<Ur1331/>} />
-                    <Route path="/products/ureter" element={<ProductsUreter/>} />
-                    <Route path="/products/cy-1355" element={<Cy1355/>} />
+                    <Route path={process.env.PUBLIC_URL + '/anka'} element={<HomePage/>}  /> 
+                    <Route path={process.env.PUBLIC_URL + '/anka/products'} element={<Products/>} />
+                    <Route path={process.env.PUBLIC_URL + '/anka/contact-us'} element={<ContactUs/>} />
+                    <Route path={process.env.PUBLIC_URL + '/anka/products/ur-1328'} element={<Ur1328/>} />
+                    <Route path={process.env.PUBLIC_URL + '/anka/products/ur-1331'} element={<Ur1331/>} />
+                    <Route path={process.env.PUBLIC_URL + '/anka/products/ureter'} element={<ProductsUreter/>} />
+                    <Route path={process.env.PUBLIC_URL + '/anka/products/cy-1355'} element={<Cy1355/>} />
                 </Routes>
                 <Footer /> 
             </div>

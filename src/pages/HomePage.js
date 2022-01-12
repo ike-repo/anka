@@ -11,6 +11,8 @@ import
     makeStyles,
     CardMedia
 } from "@material-ui/core";
+import cystone from '../assets/cystone.jpeg';
+import ureter from '../assets/ureter.jpeg';
 
 const useStyles = makeStyles( ( theme ) => ( {
     topImageContainer: {
@@ -84,7 +86,7 @@ const HomePage = () =>
                             alt="Focus News"
                             // height="300"
                             className={ classes.media }
-                            image={ "/images/ureter.jpeg" }
+                            image={ ureter }
                         />
                          <Typography className={classes.info}>
                             Flexible Video Ureterorenoscope
@@ -100,7 +102,7 @@ const HomePage = () =>
                                 alt="Focus News"
                                 // height="300"
                                 className={ classes.media }
-                                image={ "/images/cystone.jpeg" }
+                                image={ cystone }
                             />
                             <Typography className={classes.info}>
                                 Flexible Video Cystonephroscope
