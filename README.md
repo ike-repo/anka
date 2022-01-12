@@ -1,4 +1,7 @@
 # Getting Started with Create React App
+  // "homepage":"ike-repo.github.io",
+    "deploy": "yarn run build && gh-pages -d build"
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

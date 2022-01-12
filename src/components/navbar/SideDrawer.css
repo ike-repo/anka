@@ -1,0 +1,106 @@
+.navbar-small-container{
+    display: flex;
+    /* flex-flow: row; */
+    margin: 0 0 0 0 ;
+    padding: 0 0.25rem 0 0.25rem;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    flex-wrap: nowrap;
+    border-bottom: solid 0.5px rgba(163, 166, 170, 0.445);
+    box-shadow: 1px 1px 5px rgba(151, 144, 151, 0.6);
+    z-index:2;
+    /* height: 100px; */
+    width: 100%;
+    background-color: #fff;
+    /* background-size: cover; */
+}
+
+.logo-side-drawer {
+    height: 3rem;
+    /* margin-left: 1em; */
+    justify-content: flex-start;
+    display: inline-flex;
+}
+
+.btn-drawer {
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 2rem;
+    color: #fff;
+    cursor: pointer;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+    font-size: 0.8rem;
+    font-weight: 400;
+    line-height: 1;
+    width: 4rem;
+    height:1.5rem;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+}
+
+.btn-drawer:hover,
+.btn-drawer:focus {
+    color: #fd0505;
+    outline: none;
+
+}
+
+#btn-drawer {
+    text-decoration: none;
+    align-content: center;
+}
+
+.side-drawer{
+    display: flex;
+    justify-content: flex-end;
+    fill: #264653;
+    margin-right: 0.5rem;
+    position: relative;
+    font-size: 1.5rem;
+    height: 5rem;
+    cursor: pointer;
+}
+
+.side-drawer:active{
+    fill:#0f350c
+}
+
+.donate-small{
+    text-decoration: none;
+    text-align: center;
+}
+
+
+
+/* .drawer-links{
+    display: flex;
+    color: #e1e9fc;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    list-style: none;
+    width:35vh;
+    height: 5rem;
+    text-decoration: none;
+    font-size: 1.5rem;
+  }
+
+  .drawer-links:hover {
+    background: #11668B;
+    border-left: 0.5rem solid #112233;
+    cursor: pointer;
+  } */
