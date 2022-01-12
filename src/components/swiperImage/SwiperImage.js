@@ -84,7 +84,7 @@ const SwiperImage = () =>
     for ( i = 0; i < 8; i += 1 ) {
         slides.push(
             <SwiperSlide key={ `slide-${ i }` } tag="li" >
-                <a href="products"><img src={ `/images/product${ i + 1 }.jpeg` }/></a>
+                <a href="products"><img src={ `images/product${ i + 1 }.jpeg` }/></a>
             </SwiperSlide>
         )
     }
