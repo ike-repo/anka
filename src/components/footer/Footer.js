@@ -41,8 +41,8 @@ export default function Footer ()
             <Container className="container">
                 <Grid container spacing={ 3 } className="footerObjects">
                     <Grid item xs={ 5 } sm={ 5 } md={ 2 } className="logoFooter">
-                        <a href="/">
-                            <img className="logo-footer" src={ logo } alt="logo"></img>{ " " }
+                        <a href="/anka">
+                            <img className="logo-footer" src={ logo } alt="logo"></img>
                         </a>
                     </Grid>
                     <Grid item xs={ 5 } sm={ 5 } md={ 6 }>

@@ -75,12 +75,14 @@ const ContactUs = () =>
                     <div className={ formStyles.headerInfo }>
                         <i className="fas fa-map-marked-alt fa-5x" style={ { color: "#14688D" } }></i>
                         <br></br>
+                        <br></br>
                         <Typography className={ formStyles.info } variant="h5">
                         İstiklal Mahallesi 894. Sokak No:79A/15 Atakum/SAMSUN
                         </Typography>
                     </div>
                     <div className={ formStyles.headerInfo }>
                         <i className="fas fa-at fa-5x" style={ { color: "#14688D" } }></i>
+                        <br></br>
                         <br></br>
                         <Typography className={ formStyles.info } variant="h5">
                         info@anka-medikal.com

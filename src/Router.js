@@ -19,7 +19,7 @@ function AppRouter ()
             <div className="App">
                 <Navbar />
                 <Routes>
-                    <Route path='/anka/' element={ <HomePage /> } />
+                    <Route path='/' element={ <HomePage /> } />
                     <Route path= '/products' element={ <Products /> } />
                     <Route path= '/contact-us' element={ <ContactUs /> } />
                     <Route path= '/products/ur-1328' element={ <Ur1328 /> } />
