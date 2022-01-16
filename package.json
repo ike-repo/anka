@@ -1,7 +1,6 @@
 {
   "name": "anka-med",
   "version": "0.1.0",
-  "homepage":"https://ike-repo.github.io/anka",
   "private": true,
   "dependencies": {
     "@material-ui/core": "^4.12.3",

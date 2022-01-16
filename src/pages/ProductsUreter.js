@@ -1,7 +1,11 @@
 import React, {useState, useEffect} from 'react';
 import Aos from 'aos';
 import "aos/dist/aos.css";
-
+import product1 from '../assets/product1.jpg'
+import product2 from '../assets/product2.jpeg'
+import portatif from '../assets/portatif.png'
+import dayanikli from '../assets/dayanikli.png'
+import ergonomik from '../assets/ergonomik.png'
 import
 {
     Grid,
@@ -91,7 +95,7 @@ function ProductsUreter ()
                             alt="Ureter"
                             // height="300"
                             // className={ classes.media }
-                            image={ "/images/product1.jpeg" }
+                            image={ product1 }
                         />
                     </a>
                 </Grid>
@@ -104,7 +108,7 @@ function ProductsUreter ()
                         alt="Ureter"
                         // height="300"
                         // className={ classes.media }
-                        image={ "/images/product2.jpeg" }
+                        image={ product2 }
                     />
                     </a>
                 </Grid>
@@ -118,7 +122,7 @@ function ProductsUreter ()
                         alt="feature"
                         // height="300"
                         // className={ classes.media }
-                        image={ "/images/portatif.png" }
+                        image={ portatif }
                     />
                     <Typography className={formStyles.info}>
                         Portatif
@@ -132,7 +136,7 @@ function ProductsUreter ()
                         alt="feature"
                         // height="500"
                         // className={ classes.media }
-                        image={ "/images/dayanikli.png" }
+                        image={ dayanikli }
                     />
                      <Typography className={formStyles.info}>
                         Dayanıklı
@@ -147,7 +151,7 @@ function ProductsUreter ()
                         alt="feature"
                         // height="300"
                         // className={ classes.media }
-                        image={ "/images/ergonomik.png" }
+                        image={ ergonomik }
                     />
                      <Typography className={formStyles.info}>
                         Ergonomik

@@ -15,9 +15,12 @@ import cystone from '../assets/cystone.jpeg';
 import ureter from '../assets/ureter.jpeg';
 
 const useStyles = makeStyles( ( theme ) => ( {
+    root:{
+        // overflowX:'hidden'
+    },
     topImageContainer: {
         // zIndex: 1,
-        overflow:'hidden'
+        // overflow:'hidden',
     },
     media: {
         marginTop: '1rem',
@@ -74,13 +77,13 @@ const HomePage = () =>
     const classes = useStyles();
 
     return (
-        <div >
+        <div className={ classes.root }>
             <SwiperImage />
             <Container className={ classes.topImageContainer } >
                 <Grid container spacing={ 6 }  >
                 <Grid item xs={ 2 } sm={ 12 } md={ 2 } ></Grid>
                     <Grid data-aos={(windowWidth > 1024 ? "fade-right" : "fade-up")} item xs={ 8 } sm={ 8 } md={ 4 } className={ classes.productCard }>
-                        <a href="/anka/products/ureter">
+                        <a href="/products/ureter">
                         <CardMedia
                             component="img"
                             alt="Focus News"
@@ -96,7 +99,7 @@ const HomePage = () =>
                     {windowWidth < 769 ? <Grid item xs={ 2 } sm={ 2 } ></Grid> : null}
                     {windowWidth < 769 ? <Grid item xs={ 2 } sm={ 2 } ></Grid> : null}
                         <Grid data-aos={(windowWidth > 1024 ? "fade-left" : "fade-up")} item xs={ 8 } sm={ 8 } md={ 4 }>
-                    <a href="/anka/products/cy-1355">
+                    <a href="/products/cy-1355">
                             <CardMedia
                                 component="img"
                                 alt="Focus News"

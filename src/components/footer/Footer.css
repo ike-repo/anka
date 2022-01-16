@@ -8,12 +8,15 @@
 }
 
 ul{
-    padding-inline-start:none !important;
+    padding-inline-start:0 ;
+   padding: none;
+
 }
-.aboutus-listItem{
-    color:#ce2727;
-    text-decoration: none;
+
+.listItem{
     list-style-type: none;
+    margin-top: 1rem;
+
 }
 
 .listLink:hover{
@@ -22,10 +25,17 @@ ul{
     list-style-type: none;
     /* text-shadow: 0px 1px 2px #fff */
 }
-
+.logo-footer{
+    margin-left: -4rem;
+}
 ul.li:hover{
     color:#1D58A8;
 
+}
+
+.footer-info{
+    display: flex;
+    margin-top: 1rem;
 }
 
 .fa-react {
@@ -57,82 +67,6 @@ ul.li:hover{
     margin-left: 1rem;
 }
 
-.social {
-    display: flex;
-    margin:0;
-    padding: 0;
-    justify-content: flex-start;
-}
-
-#footer-linkedin {
-    display: flex;
-    margin:0;
-    padding: 0;
-    justify-content: flex-start;
-    color:#fff;
-}
-
-#footer-linkedin:hover {
-    color:#0e76a8;
-}
-
-#footer-twitter {
-    display: flex;
-    margin-left:1rem;
-    padding: 0;
-    justify-content: flex-start;
-    color:#fff;
-}
-
-#footer-twitter:hover {
-    color:#1da1f2;
-
-}
-
-#footer-facebook {
-    display: flex;
-    margin-right:1rem;
-    padding: 0;
-    justify-content: flex-start;
-    color:#fff;
-}
-
-#footer-facebook:hover {
-    color:#4d77c9;
-}
-
-.donate-footer {
-    display: flex;
-    flex-direction: column;
-    align-content: flex-start;
-    justify-content: space-between;
-    /* color:white */
-}
-
-.join-footer {
-    display: flex;
-    flex-direction: row;
-    align-content: flex-start;
-    justify-content: space-between;
-}
-
-.donate-button-footer {
-    margin: 0;
-}
-.amazon-logo-footer {
-    margin: 1em 0em;
-    height: auto;
-    max-width: 100px;
-}
-.logo-footer {
-    height:20rem;
-    width: auto;
-    margin-left: 3rem;
-}
-
-.irsLink {
-    color:#fff
-}
 
 .copyright {
     text-align: center;

@@ -37,7 +37,7 @@ function SideDrawer( {item} ){
         <div className="navbar-small-container">
             
             <div>
-                <Link className="logoSet" to="/anka/" >
+                <Link className="logoSet" to="/" >
                     <img className="logo-side-drawer" src={ logo } alt="logo"></img>
                 </Link>
             </div>

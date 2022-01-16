@@ -10,11 +10,7 @@ import './SwiperImage.css';
 import
 {
     Grid,
-    Container,
-    Typography,
-    Link,
     makeStyles,
-    CardMedia
 } from "@material-ui/core";
 
 SwiperCore.use( [ Navigation, Pagination, Autoplay ] )
@@ -22,15 +18,12 @@ SwiperCore.use( [ Navigation, Pagination, Autoplay ] )
 const useStyles = makeStyles( ( theme ) => ( {
     topImageContainer: {
         zIndex: 1,
-        // overflow:'hidden'
     },
     media: {
         marginTop: '5rem',
         marginBottom: '5rem'
     },
-    root: {
-        // marginBottom:"3rem"
-    },
+   
     header: {
         position: "absolute",
         display: "flex",
@@ -58,23 +51,23 @@ const useStyles = makeStyles( ( theme ) => ( {
 const SwiperImage = () =>
 {
     const slides = [];
-    const [ windowWidth, setWindowWidth ] = useState( window.innerWidth );
+    // const [ windowWidth, setWindowWidth ] = useState( window.innerWidth );
     // const imageUrl = windowWidth >= 650 ? DesktopTopImage : DesktopTopImage;
     const classes = useStyles();
-    useEffect( () =>
-    {
-        const handleWindowResize = () =>
-        {
-            setWindowWidth( window.innerWidth );
-        };
+    // useEffect( () =>
+    // {
+    //     const handleWindowResize = () =>
+    //     {
+    //         setWindowWidth( window.innerWidth );
+    //     };
 
-        window.addEventListener( 'resize', handleWindowResize );
+    //     window.addEventListener( 'resize', handleWindowResize );
 
-        return () =>
-        {
-            window.removeEventListener( 'resize', handleWindowResize );
-        }
-    }, [] );
+    //     return () =>
+    //     {
+    //         window.removeEventListener( 'resize', handleWindowResize );
+    //     }
+    // }, [] );
 
     useEffect( () =>
     {

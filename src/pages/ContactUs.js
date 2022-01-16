@@ -13,7 +13,7 @@ const stylesFunc = makeStyles( ( theme ) => ( {
         //  height: "calc(140vh - 19.0625rem)",
         textAlign: 'start',
         marginBottom: "9rem",
-        // overflow: 'hidden'
+        overflow: 'hidden'
     },
     header: {
         display: 'flex',
@@ -69,7 +69,7 @@ const ContactUs = () =>
     const formStyles = stylesFunc();
 
     return (
-        <Container className={ formStyles.wrapper } maxWidth="md">
+        <Container className={ formStyles.wrapper } >
             <Grid container spacing={ 6 } >
                 <Grid item xs={ 12 } sm={ 12 } md={ 12 }>
                     <div className={ formStyles.headerInfo }>

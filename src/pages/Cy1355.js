@@ -3,7 +3,6 @@ import Aos from 'aos';
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import { CardMedia } from '@material-ui/core'
-import pic1 from '../assets/ur1331a.jpeg'
 import pic3 from '../assets/cy1355b.jpeg'
 
 const useStyles = makeStyles( ( theme ) => ( {

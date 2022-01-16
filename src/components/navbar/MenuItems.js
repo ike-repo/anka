@@ -1,17 +1,17 @@
 export const MenuItems = [
       {
         name:'Ana Sayfa',
-        path:'/anka/',
+        path:'/',
         cName:'nav-links'
     },
     {
         name:'Ürünler', 
-        path:'/anka/products',
+        path:'/products',
         cName:'nav-links'
     },
     {
         name:'Bize Ulaşın',
-        path:'/anka/contact-us',
+        path:'/contact-us',
         cName:'nav-links'
     },
   

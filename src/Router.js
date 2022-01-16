@@ -14,12 +14,12 @@ import Cy1355 from '../src/pages/Cy1355';
 function AppRouter ()
 {
     return (
-        <Router basename="/anka">
+        <Router >
         {/* <HashRouter > */}
             <div className="App">
                 <Navbar />
                 <Routes>
-                    <Route path='/anka/' element={ <HomePage /> } />
+                    <Route path='/' element={ <HomePage /> } />
                     <Route path= '/products' element={ <Products /> } />
                     <Route path= '/contact-us' element={ <ContactUs /> } />
                     <Route path= '/products/ur-1328' element={ <Ur1328 /> } />
