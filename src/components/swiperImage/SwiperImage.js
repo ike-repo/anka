@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import Aos from 'aos';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, { Navigation, Pagination, Autoplay } from 'swiper';
@@ -77,7 +77,7 @@ const SwiperImage = () =>
     for ( i = 0; i < 8; i += 1 ) {
         slides.push(
             <SwiperSlide key={ `slide-${ i }` } tag="li" >
-                <a href="products"><img src={ `images/product${ i + 1 }.jpeg` }/></a>
+                <a href="products"><img src={ `images/product${ i + 1 }.jpeg` } alt="Top product images in slider"/></a>
             </SwiperSlide>
         )
     }

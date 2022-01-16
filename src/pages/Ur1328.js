@@ -51,22 +51,22 @@ const useStyles = makeStyles( ( theme ) => ( {
 
 export default function Ur1328 ()
 {
-    const [ windowWidth, setWindowWidth ] = useState( window.innerWidth );
+    // const [ windowWidth, setWindowWidth ] = useState( window.innerWidth );
     const classes = useStyles();
-    useEffect( () =>
-    {
-        const handleWindowResize = () =>
-        {
-            setWindowWidth( window.innerWidth );
-        };
+    // useEffect( () =>
+    // {
+    //     const handleWindowResize = () =>
+    //     {
+    //         setWindowWidth( window.innerWidth );
+    //     };
 
-        window.addEventListener( 'resize', handleWindowResize );
+    //     window.addEventListener( 'resize', handleWindowResize );
 
-        return () =>
-        {
-            window.removeEventListener( 'resize', handleWindowResize );
-        }
-    }, [] );
+    //     return () =>
+    //     {
+    //         window.removeEventListener( 'resize', handleWindowResize );
+    //     }
+    // }, [] );
 
     useEffect(() => {
         Aos.init({ duration: 3000});

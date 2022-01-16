@@ -22,21 +22,7 @@ const SidebarLabel = styled.span`
   margin-left: 0.5rem;
 `;
 
-const DropdownLink = styled(Link)`
-  background: #112233;
-  width:35vh;
-  height: 5rem;
-  padding-left: 3rem;
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  color: #f5f5f5;
-  font-size: 1.2rem;
-  &:hover {
-    background: #B7B7A4;
-    cursor: pointer;
-  }
-`;
+
 
 const SubMenu = ({ item, onClick }) => {
     const [subnav, setSubnav] = useState(false);
