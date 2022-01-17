@@ -10,7 +10,6 @@ import
     Typography,
     makeStyles,
     CardMedia,
-    TextField
 } from "@material-ui/core";
 import cystone from '../assets/cystone.jpeg';
 import ureter from '../assets/ureter.jpeg';
