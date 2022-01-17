@@ -54,7 +54,7 @@ function SideDrawer( {item} ){
             <div className="hamburger-small">
                 <FaIcons.FaBars onClick={ toggle } className='side-drawer' />
             </div>
-    </div>
+        </div>
     )
 };
 const clickOutsideConfig = {
