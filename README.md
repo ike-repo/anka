@@ -2,6 +2,15 @@
   // "homepage":"ike-repo.github.io",
     "deploy": "yarn run build && gh-pages -d build"
 
+*********
+This repo and website is deployed by leveraging https://app.netlify.com
+It is free tool for small scale applications.
+Once you tie your repo to netlify, it is automatically deploys the code changes. 
+3 main things you need to do to get the app deployed successfully.
+1- Add your github repo to netlify.
+2- Add goofy-franklin-2426d0.netlify.app into DNS settings of your domain. Also, add your custom domain url into netlify tool.
+3- Fix all issues with the react app including warnings.
+*********
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
