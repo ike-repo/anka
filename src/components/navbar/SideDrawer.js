@@ -7,12 +7,13 @@ import SubMenu from './SubMenu';
 import { IconContext } from 'react-icons/lib';
 import './SideDrawer.css'
 import onClickOutside from 'react-onclickoutside';
-import logo from '../../assets/anka_logo.svg';
+import logo from '../../assets/anka_logo1.svg';
 
 const SideDrawerNav = styled.nav`
     background: #52796F;
     width: 35vh;
     height: 110vh;
+    padding-left:1rem;
     display: flex;
     justify-content: start;
     position: fixed;
@@ -23,7 +24,7 @@ const SideDrawerNav = styled.nav`
 `;
 
 const SideDrawerWrap = styled.div`
-    width:50%
+    width:70%
 `;
 
 function SideDrawer( {item} ){
@@ -35,12 +36,9 @@ function SideDrawer( {item} ){
     }
     return(
         <div className="navbar-small-container">
-            
-            <div>
                 <Link className="logoSet" to="/" >
                     <img className="logo-side-drawer" src={ logo } alt="logo"></img>
                 </Link>
-            </div>
             <div>
                 <IconContext.Provider value={{ style: { color: 'red' }}} >
                     <SideDrawerNav onClick={handleSubMenuClick} isOpen={isOpen}>

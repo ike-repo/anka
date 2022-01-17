@@ -1,0 +1,29 @@
+.spinner-container {
+    display: flex;
+    height: 40rem;
+    /* margin:auto; */
+    justify-content: center;
+  }
+.lds-spinner {
+display: inline-block;
+position: relative;
+width: 4rem;
+height: 4rem;
+margin:auto;
+align-self: center;
+}
+.lds-spinner div {
+transform-origin: 40px 40px;
+animation: lds-spinner 1.2s linear infinite;
+}
+  .lds-spinner div:after {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 3px;
+    left: 37px;
+    width: 6px;
+    height: 18px;
+    border-radius: 20%;
+  }
+  

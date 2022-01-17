@@ -19,9 +19,24 @@ const useStyles = makeStyles( ( theme ) => ( {
     topImageContainer: {
         zIndex: 1,
     },
+    marker:{
+        display:'none',
+        color:'white'
+    },
     media: {
-        marginTop: '5rem',
-        marginBottom: '5rem'
+        marginTop: '2.5rem',
+        marginBottom: '2.5rem',
+        zIndex:0,
+        // height:"69%",
+        // width:"auto",
+        // paddingLeft:"14%",
+        justifyContent:'center',
+        // listStyle:'none',
+        // listStyleType:'none',
+        // backgroundColor:"red",
+        // textDecoration:"none",
+        // paddingLeft:0,
+        // margin:0
     },
    
     header: {
@@ -77,7 +92,7 @@ const SwiperImage = () =>
     for ( i = 0; i < 8; i += 1 ) {
         slides.push(
             <SwiperSlide key={ `slide-${ i }` } tag="li" >
-                <a href="products"><img src={ `images/product${ i + 1 }.jpeg` } alt="Top product images in slider"/></a>
+                <a href="products"><img src={ `images/product${ i + 1 }.jpeg` } alt="Top product images in slider" className={classes.media}/></a>
             </SwiperSlide>
         )
     }

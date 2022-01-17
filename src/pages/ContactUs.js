@@ -73,7 +73,12 @@ const ContactUs = () =>
             <Grid container spacing={ 6 } >
                 <Grid item xs={ 12 } sm={ 12 } md={ 12 }>
                     <div className={ formStyles.headerInfo }>
-                        <i className="fas fa-map-marked-alt fa-5x" style={ { color: "#14688D" } }></i>
+                        <i className="fas fa-map-marked-alt fa-5x" style={ { color: "#02B2BC" } }></i>
+                        <br></br>
+                        <br></br>
+                        <Typography className={ formStyles.info } variant="h4">
+                        Anka Cerrahi ve Medikal Ürünler Ticaret Limited Şirketi
+                        </Typography>
                         <br></br>
                         <br></br>
                         <Typography className={ formStyles.info } variant="h5">
@@ -81,7 +86,7 @@ const ContactUs = () =>
                         </Typography>
                     </div>
                     <div className={ formStyles.headerInfo }>
-                        <i className="fas fa-at fa-5x" style={ { color: "#14688D" } }></i>
+                        <i className="fas fa-at fa-5x" style={ { color: "#02B2BC" } }></i>
                         <br></br>
                         <br></br>
                         <Typography className={ formStyles.info } variant="h5">

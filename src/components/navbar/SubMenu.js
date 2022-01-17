@@ -7,14 +7,13 @@ const SideDrawerLink = styled(Link)`
   color: #e1e9fc;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
   list-style: none;
   width:35vh;
   height: 5rem;
   text-decoration: none;
   font-size: 1.5rem;
   &:hover {
-    background: #B7B7A4;
+    background: #264653;
     cursor: pointer;
   }
 `;

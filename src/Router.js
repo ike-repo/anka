@@ -15,8 +15,7 @@ function AppRouter ()
 {
     return (
         <Router >
-        {/* <HashRouter > */}
-            <div className="App">
+            <div className="App" >
                 <Navbar />
                 <Routes>
                     <Route path='/' element={ <HomePage /> } />
@@ -29,7 +28,6 @@ function AppRouter ()
                 </Routes>
                 <Footer />
             </div>
-        {/* </HashRouter> */}
         </Router>
     );
 }

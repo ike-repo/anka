@@ -10,7 +10,7 @@ function Copyright ()
     return (
         <React.Fragment>
             <Typography className="copyright">
-                { "© " } Anka-Group Medikal { new Date().getFullYear() }
+                { "© " } Anka Cerrahi ve Medikal Ürünler <br></br>Ticaret Limited Şirketi <br></br>{ new Date().getFullYear() }
             </Typography>
         </React.Fragment>
     );
@@ -50,7 +50,7 @@ export default function Footer ()
                             <ul className="list">
                                 <li className="listItem">
                                     <div className="footer-info">
-                                        <i className="fas fa-map-marked-alt fa-2x" style={ { marginRight: "1rem" } }></i>
+                                        <i className="fas fa-map-marked-alt fa-2x" style={ { marginRight: "1rem", color:'#02B2BC' } }></i>
                                         <Typography className="contactus">
                                             İstiklal Mahallesi 894. Sokak No:79A/15 Atakum/SAMSUN
                                     </Typography>
@@ -59,7 +59,7 @@ export default function Footer ()
                                 <li className="listItem">
                                     <div className="footer-info">
 
-                                        <i className="fas fa-phone-alt fa-2x" style={ { marginRight: "1rem" } } ></i>
+                                        <i className="fas fa-phone-alt fa-2x" style={ { marginRight: "1rem", color:'#02B2BC' } } ></i>
                                         <Typography className="contactus">
                                             Tel: 0 533 136 18 79
                                 </Typography>
@@ -67,7 +67,7 @@ export default function Footer ()
                                 </li>
                                 <li className="listItem">
                                     <div className="footer-info">
-                                        <i className="fas fa-at fa-2x" style={ { marginRight: "1rem" } }></i>
+                                        <i className="fas fa-at fa-2x" style={ { marginRight: "1rem", color:'#02B2BC' } }></i>
                                         <Typography className="contactus">
                                             info@anka-medikal.com
                                 </Typography>
@@ -81,7 +81,7 @@ export default function Footer ()
                         </Grid>
                     </Grid>
                 :
-                    <Grid item xs={ 12 } sm={ 12 } md={ 12 } >
+                    <Grid item xs={ 12 } sm={ 12 } md={ 12 } className="footerSmall">
                         <Copyright />
                         <br></br>
                     </Grid>}

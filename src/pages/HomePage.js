@@ -9,23 +9,31 @@ import
     Container,
     Typography,
     makeStyles,
-    CardMedia
+    CardMedia,
+    TextField
 } from "@material-ui/core";
 import cystone from '../assets/cystone.jpeg';
 import ureter from '../assets/ureter.jpeg';
 
 const useStyles = makeStyles( ( theme ) => ( {
     root:{
-        // overflowX:'hidden'
+        position:'relative',
+        overflow:'hidden',
+        marginTop:'-2rem',
     },
     topImageContainer: {
+        position:'static',
+        overflow:'hidden',
         // zIndex: 1,
-        // overflow:'hidden',
+        overflowX:'hidden',
+        overflowY:'hidden',
     },
     media: {
         marginTop: '1rem',
         marginBottom: '1rem',
         boxShadow: '1px 1px 7px 1px grey',
+        zIndex:1,
+        borderRadius:'5px'
     },
     productCard: {
         marginBottom: "2rem"    
@@ -34,6 +42,9 @@ const useStyles = makeStyles( ( theme ) => ( {
         color: "#34455E",
         textAlign: 'center',
         marginTop:'2rem',
+        // marginBottom:"2rem",
+        textDecoration:'none !important',
+        // textTransform:'none'
     },
     header: {
         position: "absolute",
@@ -83,7 +94,7 @@ const HomePage = () =>
                 <Grid container spacing={ 6 }  >
                 <Grid item xs={ 2 } sm={ 12 } md={ 2 } ></Grid>
                     <Grid data-aos={(windowWidth > 1024 ? "fade-right" : "fade-up")} item xs={ 8 } sm={ 8 } md={ 4 } className={ classes.productCard }>
-                        <a href="/products/ureter">
+                        <a href="/products/ureter" className={classes.info}>
                         <CardMedia
                             component="img"
                             alt="Focus News"
@@ -91,7 +102,7 @@ const HomePage = () =>
                             className={ classes.media }
                             image={ ureter }
                         />
-                         <Typography className={classes.info}>
+                         <Typography variant='h6'>
                             Flexible Video Ureterorenoscope
                         </Typography>
                         </a>
@@ -99,21 +110,22 @@ const HomePage = () =>
                     {windowWidth < 769 ? <Grid item xs={ 2 } sm={ 2 } ></Grid> : null}
                     {windowWidth < 769 ? <Grid item xs={ 2 } sm={ 2 } ></Grid> : null}
                         <Grid data-aos={(windowWidth > 1024 ? "fade-left" : "fade-up")} item xs={ 8 } sm={ 8 } md={ 4 }>
-                    <a href="/products/cy-1355">
-                            <CardMedia
-                                component="img"
-                                alt="Focus News"
-                                // height="300"
-                                className={ classes.media }
-                                image={ cystone }
-                            />
-                            <Typography className={classes.info}>
-                                Flexible Video Cystonephroscope
-                            </Typography>
-                    </a>
+                            <a href="/products/cy-1355" className={classes.info}>
+                                    <CardMedia
+                                        component="img"
+                                        alt="Focus News"
+                                        // height="300"
+                                        className={ classes.media }
+                                        image={ cystone }
+                                    />
+                                    <Typography  variant='h6'>
+                                        Flexible Video Cystonephroscope
+                                    </Typography>
+                            </a>
                         </Grid>
                 </Grid>
             </Container>
+            <br></br><br></br>
            </div >
     );
 }

@@ -4,6 +4,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import { CardMedia } from '@material-ui/core'
 import pic3 from '../assets/cy1355b.jpeg'
+import LoadSpinner from '../components/loadSpinner/LoadSpinner'
 
 const useStyles = makeStyles( ( theme ) => ( {
     
@@ -51,6 +52,7 @@ const useStyles = makeStyles( ( theme ) => ( {
 
 export default function Cy1355 ()
 {
+    const [isLoading, setIsLoading] = useState(true);
     const [ windowWidth, setWindowWidth ] = useState( window.innerWidth );
     const classes = useStyles();
     useEffect( () =>
@@ -71,22 +73,18 @@ export default function Cy1355 ()
     useEffect(() => {
         Aos.init({ duration: 3000});
     }, []);
+    
+    useEffect(() => {
+        setTimeout(() => {
+           setIsLoading(false)
+        }, 1000)
+      }, []);
 
     return (
+        <div>
+        { isLoading ? <LoadSpinner/> :
         <div className={ classes.singleProduct }>
             <Grid container spacing={ 3 } >
-                    {/* <Grid item xs={ 1 } sm={ 1 } md={ 1 } ></Grid>
-                    <Grid item xs={ 10 } sm={ 12 } md={ 10 }>
-                        <CardMedia
-                            data-aos="fade-up"
-                            component="img"
-                            alt="UR-1328"
-                            // height="300"
-                            className= { classes.media }
-                            image={ pic1 }
-                        />
-                    </Grid>
-                    <Grid item xs={ 1 } sm={ 1 } md={ 1 } ></Grid> */}
                     <Grid item xs={ 1 } sm={ 1 } md={ 1 } ></Grid>
                     <Grid item xs={ 10 } sm={ 10 } md={ 10 }>
                         <CardMedia
@@ -99,6 +97,8 @@ export default function Cy1355 ()
                         />
                     </Grid>
             </Grid>
+        </div>
+}
         </div>
         )
     }

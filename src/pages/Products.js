@@ -20,13 +20,14 @@ import
 
 const stylesFunc = makeStyles( ( theme ) => ( {
     wrapper: {
-        marginBottom:'5rem',
-        marginLeft:'7rem',
+        marginBottom:'2rem',
+        // marginLeft:'4rem',
        alignItems:'center',
+       position:'relative',
         //  height: "calc(140vh - 19.0625rem)",
         // textAlign: 'start',
-        overflowX: 'hidden',
-    overflowY: 'hidden',
+        overflow: 'hidden',
+    // overflowY: 'unset',
 
     },
     header: {
@@ -48,12 +49,13 @@ const stylesFunc = makeStyles( ( theme ) => ( {
         textAlign: 'center',
         marginTop:'2rem',
         justifyContent: 'center',
-        fontSize:'2rem'
+        fontSize:'1rem'
     },
     products: {
-        marginTop:'5rem',
-        marginBottom:'10rem',
-
+        marginTop:'2rem',
+        marginBottom:'2rem',
+        position:'relative',
+        overflow:'hidden',
     },
     formLogo: {
         maxWidth: 150,
@@ -94,8 +96,8 @@ function Products ()
                         <CardMedia
                             data-aos={(windowWidth > 1024 ? "fade-right" : "fade-up")}
                             component="img"
-                            alt="Focus News"
-                            height="300"
+                            alt="Product UR-1328"
+                            // height="300"
                             // className={ classes.media }
                             image={ product1 }
                         />
@@ -107,8 +109,8 @@ function Products ()
                     <CardMedia
                         data-aos="fade-up"
                         component="img"
-                        alt="Focus News"
-                        height="300"
+                        alt="Product UR-1331"
+                        // height="300"
                         // className={ classes.media }
                         image={ product2 }
                     />
@@ -120,17 +122,17 @@ function Products ()
                     <CardMedia
                         data-aos={(windowWidth > 1024 ? "fade-left" : "fade-up")}
                         component="img"
-                        alt="Focus News"
-                        height="300"
+                        alt="Product CY-1355"
+                        // height="300"
                         // className={ classes.media }
                         image={ product3 }
                     />
                     </a>
                 </Grid>
             </Grid>
-            <Grid container spacing={ 4 } >
-                <Grid item xs={ 2 } sm={2} md={2}></Grid>
-                <Grid data-aos={(windowWidth > 1024 ? "fade-right" : "fade-up")} item xs={ 2 } sm={ 2 } md={ 2 }>
+            <Grid container spacing={ 4 } className={ formStyles.logos }>
+                <Grid item xs={ 1 } sm={2} md={2}></Grid>
+                <Grid data-aos={(windowWidth > 1024 ? "fade-right" : "fade-up")} item xs={ 3 } sm={ 2 } md={ 2 }>
                     <CardMedia
                         // data-aos= "fade-up"
                         component="img"
@@ -144,7 +146,7 @@ function Products ()
                     </Typography>
                 </Grid>
                 {windowWidth > 769 ? <Grid item md={1} ></Grid> : null}
-                <Grid data-aos= "fade-up" item xs={ 2 } sm={ 2 } md={ 2 }>
+                <Grid data-aos= "fade-up" item xs={ 3 } sm={ 2 } md={ 2 }>
                     <CardMedia
                         
                         component="img"
@@ -159,7 +161,7 @@ function Products ()
                 </Grid>
                 {windowWidth > 769 ? <Grid item md={1} ></Grid> : null}
 
-                <Grid data-aos={(windowWidth > 1024 ? "fade-left" : "fade-up")} item xs={ 2 } sm={ 2 } md={ 2 }>
+                <Grid data-aos={(windowWidth > 1024 ? "fade-left" : "fade-up")} item xs={ 3 } sm={ 2 } md={ 2 }>
                     <CardMedia
                         // data-aos= "fade-up"
                         component="img"

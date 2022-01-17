@@ -6,9 +6,11 @@
     justify-content: flex-start;
     align-items: center;
     font-size: 1.1rem;
+    color:#fff;
     border-bottom: solid 0.5px rgba(163, 166, 170, 0.445);
     box-shadow: 1px 1px 5px rgba(151, 144, 151, 0.6);
-    background-color: #fff;
+    background-color: #264653;
+    overflow:hidden;
 }
 
 .logoset{
@@ -19,12 +21,9 @@
 .logo {
     height:15rem;
     width: 80%;
-    /* margin-left: 0.5em; */
     justify-content: flex-end;
     margin-top: 7rem;
     margin-left: -3rem;
-    /* display: inline-flex; */
-    
 }
 
 .logoName {
@@ -32,9 +31,6 @@
     width: auto;
     margin-left: -8em;
     margin-top: -1rem;
-    /* justify-content: flex-start; */
-    /* align-items: center; */
-    /* display: inline-flex; */
 }
 
 .nav-menu {
@@ -48,21 +44,6 @@
     margin-left: 1rem;
     z-index: 1;
     font-size: 1rem;
-}
-
-.social {
-    padding: 1rem;
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.donate {
-    padding: 0.3rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    text-decoration: none;
-    text-align: center;
 }
 
 .nav-item {
@@ -81,7 +62,7 @@
 
 
 .nav-links {
-    color: #606161;
+    color: #02B2BC;
     font-weight: bold;
     font-size: large;
     text-decoration: none;
@@ -92,8 +73,8 @@
     transition: margin-right 0.3s;
     transform-origin: center bottom;
     transform: rotateX(-90deg) translateY(100%);
-    color: #264653;
-    border-bottom: #264653 solid 5px;
+    color: #606161;
+    border-bottom: #606161 solid 5px;
     /* border-top: #34455E solid 5px; */
 }
 
@@ -108,106 +89,6 @@
 .menu-icon {
     display: none;
 }
-
-
-/* .changingButton:before {
-    content: 'DONATE';
-    animation: animate infinite 10s;
-} */
-
-.btn {
-    box-sizing: border-box;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    background-color: #fd0505;
-    border-radius: 0.2rem;
-    color: #fff;
-    cursor: pointer;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-align-self: center;
-    -ms-flex-item-align: center;
-    align-self: center;
-    font-size: 1.2rem;
-    font-weight: 400;
-    line-height: 1;
-    width: 6.5rem;
-    text-decoration: none;
-    justify-content: center;
-    text-transform: uppercase;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 900;
-}
-
-.btn:hover,
-.btn:focus {
-    color: #fd0505;
-    outline: none;
-
-}
-
-#btn {
-    text-decoration: none;
-    align-content: center;
-}
-
-/* .donateButton {
-    -webkit-transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
-    transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
-} */
-
-.donateButton:hover {
-    box-shadow: 0 0 40px 40px #fff inset;
-    border: 1px solid #fd0505;
-}
-
-/* @keyframes animate {
-    0% {
-        opacity: 1;
-        content: 'Donate';
-    }
-
-    7.5% {
-        opacity: 0;
-    }
-
-    25% {
-        opacity: 1;
-        content: 'Contribute';
-    }
-
-    32.5% {
-        opacity: 0;
-    }
-
-    50% {
-        opacity: 1;
-        content: 'Heal';
-    }
-
-    57.5% {
-        opacity: 0;
-    }
-
-    75% {
-        opacity: 1;
-        content: 'Support';
-    }
-
-    82.5% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-        content: 'Donate';
-    }
-} */
-
-
 
 @media screen and (max-width: 1024px) {
    
@@ -256,11 +137,6 @@
         flex-direction: column;
         
     }
-    .nav-links:hover {
-        color: #1da824;
-        /* transition: 250ms; */
-        background-color: rgb(190, 62, 62);
-    }
 
     .navbar-logo {
         position: absolute;
@@ -283,12 +159,6 @@
         color: #1D58A8;
         font-size: 2rem;
     }
-
-    .fa-linkedin,
-    .fa-twitter,
-    .fa-facebook-square {
-        display: none;
-    }
     
     .bottom-line {
         flex-direction: column;
@@ -297,4 +167,5 @@
     .nav-menu.passive {
         display: none;
     }
+    
 }

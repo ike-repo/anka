@@ -18,13 +18,14 @@ import
 
 const stylesFunc = makeStyles( ( theme ) => ( {
     wrapper: {
-        marginBottom:'5rem',
-        marginLeft:'7rem',
+        marginBottom:'2rem',
+        // marginLeft:'4rem',
        alignItems:'center',
+       position:'relative',
         //  height: "calc(140vh - 19.0625rem)",
         // textAlign: 'start',
         overflow: 'hidden',
-    // overflowY: 'visible',
+    // overflowY: 'unset',
 
     },
     header: {
@@ -46,12 +47,13 @@ const stylesFunc = makeStyles( ( theme ) => ( {
         textAlign: 'center',
         marginTop:'2rem',
         justifyContent: 'center',
-        fontSize:'2rem'
+        fontSize:'1rem'
     },
     products: {
-        marginTop:'5rem',
-        marginBottom:'10rem',
-
+        marginTop:'2rem',
+        marginBottom:'2rem',
+        position:'relative',
+        overflow:'hidden',
     },
     formLogo: {
         maxWidth: 150,
@@ -87,25 +89,27 @@ function ProductsUreter ()
     return (
         <Container  className={ formStyles.wrapper } >
             <Grid  container spacing={ 3 } className={ formStyles.products } >
-                <Grid item xs={ 12 } sm={ 6 } md={ 6 }>
+            <Grid item xs={ "auto" } sm={ 6 } md={ 2 }></Grid>
+
+            <Grid item xs={ 12 } sm={ 6 } md={ 4 }>
                     <a href="/products/ur-1328"> 
                         <CardMedia
                             data-aos={(windowWidth > 1024 ? "fade-right" : "fade-up")}
                             component="img"
-                            alt="Ureter"
+                            alt="Product UR-1328"
                             // height="300"
                             // className={ classes.media }
                             image={ product1 }
                         />
                     </a>
                 </Grid>
-                <Grid item xs={ 12 } sm={ 6 } md={ 6 }>
+                <Grid item xs={ 12 } sm={ 6 } md={ 4 }>
                 <a href="/products/ur-1331"> 
 
                     <CardMedia
                         data-aos="fade-up"
                         component="img"
-                        alt="Ureter"
+                        alt="Product UR-1331"
                         // height="300"
                         // className={ classes.media }
                         image={ product2 }
@@ -114,8 +118,8 @@ function ProductsUreter ()
                 </Grid>
             </Grid>
             <Grid container spacing={ 4 } >
-                <Grid item xs={ 2 } sm={2} md={2}></Grid>
-                <Grid data-aos={(windowWidth > 1024 ? "fade-right" : "fade-up")} item xs={ 2 } sm={ 2 } md={ 2 }>
+                <Grid item xs={ 1 } sm={2} md={2}></Grid>
+                <Grid data-aos={(windowWidth > 1024 ? "fade-right" : "fade-up")} item xs={ 3 } sm={ 2 } md={ 2 }>
                     <CardMedia
                         // data-aos= "fade-up"
                         component="img"
@@ -129,7 +133,7 @@ function ProductsUreter ()
                     </Typography>
                 </Grid>
                 {windowWidth > 769 ? <Grid item md={1} ></Grid> : null}
-                <Grid data-aos= "fade-up" item xs={ 2 } sm={ 2 } md={ 2 }>
+                <Grid data-aos= "fade-up" item xs={ 3 } sm={ 2 } md={ 2 }>
                     <CardMedia
                         
                         component="img"
@@ -144,7 +148,7 @@ function ProductsUreter ()
                 </Grid>
                 {windowWidth > 769 ? <Grid item md={1} ></Grid> : null}
 
-                <Grid data-aos={(windowWidth > 1024 ? "fade-left" : "fade-up")} item xs={ 2 } sm={ 2 } md={ 2 }>
+                <Grid data-aos={(windowWidth > 1024 ? "fade-left" : "fade-up")} item xs={ 3 } sm={ 2 } md={ 2 }>
                     <CardMedia
                         // data-aos= "fade-up"
                         component="img"
